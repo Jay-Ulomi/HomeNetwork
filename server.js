@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const expressLayouts = require('express-ejs-layouts');
+const path = require('path'); 
 const PORT = 3030;
 
 // Import routes
@@ -11,11 +12,10 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(expressLayouts);
 
-app.use(express.static('public'))
+app.use(express.static('public'));
 
 // Use routes
 app.use('/', homeRoutes);
-
 
 // Start the server
 app.listen(PORT, () => {
