@@ -1,12 +1,13 @@
 const express = require('express');
 const app = express();
 const expressLayouts = require('express-ejs-layouts');
-const PORT = 3000;
+const PORT = 3030;
 
 // Import routes
 const homeRoutes = require('./routes/HomeRoutes');
 
 app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 
 app.use(expressLayouts);
 
