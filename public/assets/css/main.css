@@ -1234,6 +1234,28 @@ section,
   background: #fff;
 }
 
+.dot-lottie-services {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  right: 36%;
+  transform: translateY(-50%);
+}
+/* For smaller screens (e.g., tablets) */
+@media screen and (max-width: 768px) {
+  .dot-lottie-services  {
+    right: 25%; /* Adjust as needed */
+  }
+}
+
+/* For mobile screens */
+@media screen and (max-width: 480px) {
+  .dot-lottie-services  {
+    left: 23%; /* Adjust as needed */
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
